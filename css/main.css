@@ -1,0 +1,116 @@
+body{
+  background: rgb(35,61,73);
+  background: linear-gradient(90deg, rgba(35,61,73,1) 24%, rgba(35,45,73,1) 56%);
+}
+
+.menu_balk {
+        font-size: 25px;
+        position: fixed;
+        top: 0;
+        width: 105%;/*was nog een stukje blauw zichtbaar aan de rechterkant. daarom dat het op 105% staat*/
+        z-index: 999;
+   }
+   
+
+.menu_balk{ /*bovenste menu balk*/
+  list-style-type: none;
+  margin: -8px;
+  margin-left: -50px;/*menu positie van Maps, Mobs, Class*/
+  padding: 10px;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #333333;
+   }
+      
+li {
+  float: inline-block;
+   }
+      
+li a {
+    display: block;
+    color: white;/*kleur van menu balk woorden*/
+    text-align: center;
+    padding: 22px 35px;/*eerst px zorgt voor de lengte van de menu balk 2de zorgt voor breedte tussen de 3 woorden*/
+    text-decoration: none;
+    }
+      
+     
+li a:hover {
+    background-color: #111;
+    }
+
+
+    #foto_headweb{
+      width: 180%;
+      margin-left: -24px ;
+      
+    }
+    .circle-container {/*is voor de logo in een cirkel te plaatsen*/
+      width: 60px; 
+      height: 60px; 
+      border-radius: 50%; 
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #ccc  ; 
+      margin-left: 20px;  
+      position: fixed; 
+      top: 7px; 
+      left: 5px; 
+      z-index: 1000; 
+  }
+  
+  .circle-container img {
+      width: 100%; 
+      height: auto; 
+      object-fit: cover; 
+  }
+
+  .above_end{
+  margin: -8px;
+  padding: 80px;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #333333;
+  }
+
+  #mainbody{
+    background-color: #333333;
+  }
+ 
+/*media*/
+  
+  
+  @media (max-width: 600px) {
+    body{
+        background: rgb(35,61,73);
+        background: linear-gradient(90deg, rgba(35,61,73,1) 24%, rgba(35,45,73,1) 56%);
+      }
+    .menu_balk {
+        font-size: 18px;
+        width: 100%;
+        padding: 10px;
+        padding-left: 38px;
+    }
+
+    li a {
+        padding: 15px 20px;
+        font-size: 30px;
+    }
+
+    #foto_headweb {
+      display: none;
+    }
+
+    .circle-container {
+        display: none;
+    }
+}
+

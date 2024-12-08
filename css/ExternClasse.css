@@ -1,0 +1,126 @@
+#exclasses-css{
+    color: #853a3a;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolommen naast elkaar */
+    gap: 10px; /* Ruimte tussen de boxen */
+    height: 300px;
+    margin-left: 100px;
+  }
+  
+  .grid-item {
+    background-color: grey; /* Donkere achtergrond */
+    color: black; /* Witte tekstkleur */
+    padding:40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw */
+    font-size: 16px;
+    height: 80%;
+    width: 70%;
+  }
+
+  table {
+    width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 18px;
+            text-align: left;
+            border: 1px solid rgb(116, 96, 96);
+            border-radius: 10px;
+            overflow: hidden;
+   
+}
+th, td {
+    padding: 12px 15px;
+    border: 1px solid rgb(116, 96, 96);
+  
+}
+th {
+    background-color: grey;
+    color: #333;
+}
+tr {
+    background-color: grey;
+}
+img{
+    width: 70%;
+}
+nav#BackButtonId {
+    display: inline-block;
+    padding: 30px;
+    margin-top: 50px;
+    }
+    
+    nav#BackButtonId .backButton-box button {
+    background-color: #853a3a; /* Primaire kleur voor de button */
+    color: #fff; /* Witte tekstkleur */
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    }
+    /* Verwijder standaard linkstijl in de knop */
+    nav#BackButtonId .backButton-box button a {
+    text-decoration: none; /* Verwijdert de onderstreping */
+    color: inherit; /* Neemt de kleur van de knop over */
+    display: inline-block; /* Zorgt ervoor dat de klikbare link dezelfde grootte heeft als de knop */
+    font-size: inherit; /* Neemt het lettertypegrootte van de knop over */
+    }
+    
+    /* Optioneel: voeg hoverstijlen toe voor de link */
+    nav#BackButtonId .backButton-box button:hover a {
+    color: #fff; /* Houd de tekstkleur wit bij hover */
+    }
+    
+    
+    nav#BackButtonId .backButton-box button:hover {
+    background-color: #432121; /* Donkerdere kleur bij hover */
+    }
+    
+    /* Kleine schermen (telefoons) */
+@media (max-width: 600px) {
+    @media (max-width: 600px) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr; /* 1 kolom in plaats van 2 voor kleinere schermen */
+          gap: 10px; /* Ruimte tussen de boxen */
+          height: auto; /* Automatische hoogte */
+          margin-left: 0; /* Geen marge aan de linkerkant */
+          margin-right: 0; /* Geen marge aan de rechterkant */
+        }
+      
+        .grid-item {
+          background-color: grey; /* Donkere achtergrond */
+          color: black; /* Zwarte tekstkleur */
+          padding: 15px; /* Kleinere padding */
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw */
+          font-size: 14px; /* Kleinere tekstgrootte */
+          height: auto; /* Automatische hoogte voor flexibele inhoud */
+          width: 90%; /* Breder voor kleinere schermen */
+          margin-left: 0; /* Geen marge aan de linkerkant */
+          margin-top: 10px; /* Kleinere marge boven de box */
+        }
+      
+        table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0;
+          font-size: 14px; /* Kleinere lettergrootte voor tabel */
+          text-align: left;
+          border: 1px solid rgb(116, 96, 96);
+          border-radius: 10px;
+          overflow: hidden;
+          margin-right: 0; /* Geen marge aan de rechterkant */
+        }
+      }
+      body{
+        padding-bottom: 50px ;
+      }
+      
+}

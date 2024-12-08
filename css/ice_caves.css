@@ -1,0 +1,71 @@
+#ice_caves-css{
+  color: #853a3a ;
+}
+/* Algemene styling voor de nav en buttons */
+nav#BackButtonId {
+display: inline-block;
+padding: 100px;
+}
+article{
+    margin-bottom: 50px;
+  }
+
+nav#BackButtonId .backButton-box button {
+background-color: #853a3a; /* Primaire kleur voor de button */
+color: #fff; /* Witte tekstkleur */
+border: none;
+padding: 15px 25px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.1s ease;
+}
+/* Verwijder standaard linkstijl in de knop */
+nav#BackButtonId .backButton-box button a {
+text-decoration: none; /* Verwijdert de onderstreping */
+color: inherit; /* Neemt de kleur van de knop over */
+display: inline-block; /* Zorgt ervoor dat de klikbare link dezelfde grootte heeft als de knop */
+font-size: inherit; /* Neemt het lettertypegrootte van de knop over */
+}
+
+/* Optioneel: voeg hoverstijlen toe voor de link */
+nav#BackButtonId .backButton-box button:hover a {
+color: #fff; /* Houd de tekstkleur wit bij hover */
+}
+
+
+nav#BackButtonId .backButton-box button:hover {
+background-color: #432121; /* Donkerdere kleur bij hover */
+}
+
+article#mapId .Map-container {
+text-align: center;
+}
+
+article#mapId .box a img {
+max-width: 100%; /* Zorgt ervoor dat de afbeelding responsief is */
+height: auto;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article#mapId .box a img:hover {
+transform: scale(1.05); /* Kleine vergroting bij hover */
+box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Schaduw bij hover */
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+nav#BackButtonId .Back-button {
+    margin: 0;
+}
+
+article#mapId {
+    margin: 10px;
+    padding: 10px;
+}
+
+nav#BackButtonId .backButton-box button {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+}

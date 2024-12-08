@@ -1,0 +1,17 @@
+.site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  width: 100%; /* Zorgt ervoor dat de footer de volledige breedte van het scherm inneemt */
+  position: fixed; /* Zorgt ervoor dat de footer altijd aan de onderkant blijft */
+  bottom: 0;
+  left: 0;
+}
+
+.site-footer p {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px 0; /* Voegt wat extra ruimte boven en onder de tekst toe */
+  
+}

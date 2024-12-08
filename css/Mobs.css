@@ -1,0 +1,121 @@
+#Mobs {
+    color: #853a3a;
+  }
+  body{
+    background: rgb(35,61,73) !important;/*anders kleurverschil op de gsm dat niet zo mooi is.
+    en anders moet ik mijn hele main.css overschrijven naar mobs.css*/
+  } 
+
+  .Navigatie {
+    margin: 20px;
+}
+article{
+  margin-bottom: 50px;
+}
+.grid-navigatie {
+    background-color: #2d6b9b; /* Achtergrondkleur van de box */
+    border: 2px solid #000000;    /* Grijze rand rondom de box */
+    padding: 10px;             /* Ruimte binnen de box */
+    width: 650px;              /* Breedte van de box */
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10%;           /* Centraal uitlijnen */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw rondom de box */
+    border-radius: 8px;        /* Afgeronde hoeken */
+}
+
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolommen voor PC */
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .grid-item {
+    height: 100%;
+    width: 99%;
+    background-color: rgb(35, 61, 73);
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  table,
+  th,
+  td {
+    color: gold;
+    border: 1px solid gold;
+    width: 1320px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Ruimte tussen tabellen */
+  }
+  
+  table td img {
+    width: 180px;
+    height: auto;
+  }
+  
+
+
+
+
+
+
+
+
+  
+  @media (max-width: 600px) {
+
+ 
+    .grid-navigatie {
+      background-color: #2d6b9b; /* Achtergrondkleur van de box */
+      border: 2px solid #000000;    /* Grijze rand rondom de box */
+      padding: 10px;             /* Ruimte binnen de box */
+      width: 400px;              /* Breedte van de box */
+      height: auto;
+      margin: 0 auto;
+      margin-top: 20%;           /* Centraal uitlijnen */
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw rondom de box */
+      border-radius: 8px;        /* Afgeronde hoeken */
+  }
+  
+   
+  
+
+
+
+
+  
+  
+  table,
+  th,
+  td {
+    color: gold;
+    border: 1px solid gold;
+    width: 450px;
+  }
+    
+    .grid-item {
+      margin-left: -50px;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(35, 61, 73);
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+  }
+  
