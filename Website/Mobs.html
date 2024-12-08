@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobs</title>
+</head>
+<body>
+    <link rel="stylesheet" href="/css/mainFooter.css">
+    <link rel="stylesheet" href="/css/Mobs.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/JS/Navigatie.js"></script>         
+    
+    <body id="mainbody">
+    
+        <header>
+            <nav>
+                <ul>
+                    <div class="circle-container">
+                        <li><img id="foto_headweb" src="/fotos/MenuFotos/WEBICON.avif" alt=""></li>
+                    </div>
+                </ul>
+                <ul class="menu_balk">
+                   
+                    <li><a href="/Website/Hoofdmenu.html">Maps</a></li>
+                    <li><a id="Mobs" href="/Website/Mobs.html">Mobs</a></li>
+                    <li><a href="/Website/Classes.html">Class</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+       
+
+            <nav class="Navigatie">
+                <div class="grid-navigatie">
+                    <!-- Het formulier voor sectienavigatie -->
+                    <form id="tableForm">
+                        <!-- Dropdownmenu om een sectie te kiezen -->
+                        <select id="sectionSelect">
+                            <option value="#DeathBeetle">Death Beetle</option>
+                            <option value="#DeathSkull">Death Skull</option>
+                            <option value="#DemonBat">Demon Bat</option>
+                            <option value="#DemonDog">Demon Dog</option>
+                            <option value="#DireWolf">Dire Wolf</option>
+                            <option value="#FrostImp">Frost Imp</option>
+                            <option value="#FrostSentinel">Frost Sentinel</option>
+                            <option value="#FrostArcher">Frost Skeleton Archer</option>
+                            <option value="#FrostAxemen">Frost Skeleton Axemen</option>
+                            <option value="#FrostCrossbowman">Frost Skeleton Crossbowman</option>
+                            <option value="#FrostFootman">Frost Skeleton Footman</option>
+                            <option value="#FrostGaurdsman">Frost Skeleton Gaurdsman</option>
+                            <option value="#FrostHalberdier">Frost Skeleton Halberdier</option>
+                            <option value="#FrostMaceman">Frost Skeleton Maceman</option>
+                            <option value="#FrostWalker">Frost Walker</option>
+                            <option value="#FrostWolf">Frost Wolf</option>
+                            <option value="#FrostWeaver">Frostweaver</option>
+                            <option value="#GiantBat">Giant Bat</option>
+                            <option value="#GiantDragonFly">Giant Dragonfly</option>
+                            <option value="#GiantSpider">Giant Spider</option>
+                            <option value="#GoblinArcher">Goblin Archer</option>
+                            <option value="#GoblinAxemen">Goblin Axeman</option>
+                            <option value="#GoblinBolaslinger">Goblin Bolaslinger</option>
+                            <option value="#GoblinMage">Goblin Mage</option>
+                            <option value="#Grimsley">Grimsley</option>
+                            <option value="#Harpy">Harpy</option>
+                            <option value="#IceGiantSpider">Ice Giant Spider</option>
+                            <option value="#IceArcher">Ice Goblin Archer</option>
+                            <option value="#IceGoblinAxemen">Ice Goblin Axeman</option>
+                            <option value="#IceHarpy">Ice Harpy</option>
+                            <option value="#IceHound">Ice hound</option>
+                            <option value="#LivingArmor">Living Armor</option>
+                            <option value="#Mummy">Mummy</option>
+                            <option value="#SkeletonArcher">Skeleton Archer</option>
+                            <option value="#SkeletonAxeman">Skeleton Axeman</option>
+                            <option value="#SkeletonCrossbowman">Skeleton Crossbowman</option>
+                            <option value="#SkeletonFootman">Skeleton Footman</option>
+                            <option value="#SkeletonGaurdsman">Skeleton Gaurdsman</option>
+                            <option value="#SkeletonMage">Skeleton Mage</option>
+                            <option value="#SkeletonSpearman">Skeleton Spearman</option>
+                            <option value="#Slime">Slime</option>
+                            <option value="#SpiderMummy">Spider Mummy</option>
+                            <option value="#Wisp">Wisp</option>
+                            <option value="#Zombie">Zombie</option>
+                            <option value="#Mimic">Mimic</option>
+                        </select>
+            
+                        <!-- De knop om naar de geselecteerde sectie te gaan -->
+                        <button type="button" onclick="goToSection()">Ga naar sectie</button>
+                    </form>
+                </div>
+            </nav>
+            
+          
+
+</section>
+
+                
+             <body>
+                <article>
+                    <body id="goblinbox">
+                        <section class="grid-container">
+                            <section class="grid-item">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4" style="height: 70px;">Monster Table</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Picture</th>
+                                            <th>HP</th>
+                                            <th>Damage</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td id="DeathBeetle" style="height: 150px;">Death Beetle</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Death_Beetle.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="DeathSkull" style="height: 150px;">Death Skull</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Death_Skull.png" alt=""></td>
+                                                <td>26</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="DemonBat" style="height: 150px;">Demon Bat</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Demon_Bat.png" alt=""></td>
+                                                <td>170</td>
+                                                <td>27</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="DemonDog" style="height: 150px;">Demon Dog</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Demon_Dog.png" alt=""></td>
+                                                <td>160</td>
+                                                <td>24</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="DireWolf" style="height: 150px;">Dire Wolf</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Dire_Wolf.png" alt=""></td>
+                                                <td>130</td>
+                                                <td>22</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostImp" style="height: 150px;">Frost Imp</td>
+                                                <td><img src="/fotos/FotosMobs.css/201px-Frost_Imp.png" alt=""></td>
+                                                <td>200</td>
+                                                <td>31.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostSentinel" style="height: 150px;">Frost Sentinel</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Sentinel.png" alt=""></td>
+                                                <td>250</td>
+                                                <td>32.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostArcher" style="height: 150px;">Frost Skeleton Archer</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Archer.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>24</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostAxemen" style="height: 150px;">Frost Skeleton Axemen</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Axeman.png" alt=""></td>
+                                                <td>170</td>
+                                                <td>38</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostCrossbowman" style="height: 150px;">Frost Skeleton Crossbowman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Crossbowman.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>45</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostFootman" style="height: 150px;">Frost Skeleton Footman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Footman.png" alt=""></td>
+                                                <td>167</td>
+                                                <td>32.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostGaurdsman" style="height: 150px;">Frost Skeleton Gaurdsman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Guardsman.png" alt=""></td>
+                                                <td>152</td>
+                                                <td>35.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostHalberdier" style="height: 150px;">Frost Skeleton Halberdier</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Halberdier.png" alt=""></td>
+                                                <td>150</td>
+                                                <td>28.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostMaceman" style="height: 150px;">Frost Skeleton Maceman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Skeleton_Maceman.png" alt=""></td>
+                                                <td>150</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostWalker" style="height: 150px;">Frost Walker</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Walker.png" alt=""></td>
+                                                <td>240</td>
+                                                <td>33.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostWolf" style="height: 150px;">Frost Wolf</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Frost_Wolf.png" alt=""></td>
+                                                <td>160</td>
+                                                <td>20.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="FrostWeaver" style="height: 150px;">Frostweaver</td>
+                                                <td><img src="/fotos/FotosMobs.css/375px-Frostweaver.png" alt=""></td>
+                                                <td>800</td>
+                                                <td>30.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GiantBat" style="height: 150px;">Giant Bat</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Giant_Bat.png" alt=""></td>
+                                                <td>90</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GiantDragonFly" style="height: 150px;">Giant Dragonfly</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Giant_Dragonfly.png" alt=""></td>
+                                                <td>22</td>
+                                                <td>Poison 1dps</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GiantSpider" style="height: 150px;">Giant Spider</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Giant_Spider.png" alt=""></td>
+                                                <td>200</td>
+                                                <td>28.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GoblinArcher" style="height: 150px;">Goblin Archer</td>
+                                                <td><img src="/fotos/FotosMobs.css/Goblin_Archer.png" alt=""></td>
+                                                <td>144</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GoblinAxemen" style="height: 150px;">Goblin Axeman</td>
+                                                <td><img src="/fotos/FotosMobs.css/Goblin_Axeman.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>21</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GoblinBolaslinger" style="height: 150px;">Goblin Bolaslinger</td>
+                                                <td><img src="/fotos/FotosMobs.css/Goblin_Bolaslinger.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>26.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="GoblinMage" style="height: 150px;">Goblin Mage</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Goblin_Mage.png" alt=""></td>
+                                                <td>135</td>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Grimsley" style="height: 150px;">Grimsley</td>
+                                                <td><img src="/fotos/FotosMobs.css/Grimsley.png" alt=""></td>
+                                                <td>400</td>
+                                                <td>31.3</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Harpy" style="height: 150px;">Harpy</td>
+                                                <td><img src="/fotos/FotosMobs.css/259px-Harpy.png" alt=""></td>
+                                                <td>200</td>
+                                                <td>29.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="IceGiantSpider" style="height: 150px;">Ice Giant Spider</td>
+                                                <td><img src="/fotos/FotosMobs.css/376px-Ice_Giant_Spider.png" alt=""></td>
+                                                <td>180</td>
+                                                <td>30.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="IceHarpy" style="height: 150px;">Ice Harpy</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Ice_Harpy.png" alt=""></td>
+                                                <td>200</td>
+                                                <td>29.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="IceHound" style="height: 150px;">Ice hound</td>
+                                                <td><img src="/fotos/FotosMobs.css/327px-Ice_Hound.png" alt=""></td>
+                                                <td>240</td>
+                                                <td>32.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="IceArcher" style="height: 150px;">Ice Goblin Archer</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Ice_Kobold_Archer.png" alt=""></td>
+                                                <td>144</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="#IceGoblinAxemen" style="height: 150px;">Ice Goblin Axeman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Ice_Kobold_Axeman.png" alt=""></td>
+                                                <td>144</td>
+                                                <td>36</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="LivingArmor" style="height: 150px;">Living Armor</td>
+                                                <td><img src="/fotos/FotosMobs.css/146px-Living_Armor.png" alt=""></td>
+                                                <td>300</td>
+                                                <td>33</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Mummy" style="height: 150px;">Mummy</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Mummy.png" alt=""></td>
+                                                <td>220</td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonArcher" style="height: 150px;">Skeleton Archer</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Archer.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonAxeman" style="height: 150px;">Skeleton Axeman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Axeman.png" alt=""></td>
+                                                <td>170</td>
+                                                <td>36</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonCrossbowman" style="height: 150px;">Skeleton Crossbowman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Crossbowman.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>45</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonFootman" style="height: 150px;">Skeleton Footman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Footman.png" alt=""></td>
+                                                <td>167</td>
+                                                <td>35.2</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonGaurdsman" style="height: 150px;">Skeleton Gaurdsman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Guardsman.png" alt=""></td>
+                                                <td>152</td>
+                                                <td>39.6</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonMage" style="height: 150px;">Skeleton Mage</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Mage.png" alt=""></td>
+                                                <td>150</td>
+                                                <td>15(60)</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SkeletonSpearman" style="height: 150px;">Skeleton spearman</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Skeleton_Spearman.png" alt=""></td>
+                                                <td>150</td>
+                                                <td>22.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Slime" style="height: 150px;">Slime</td>
+                                                <td><img src="/fotos/FotosMobs.css/508px-Slime.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>27</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="SpiderMummy" style="height: 150px;">Spider Mummy</td>
+                                                <td><img src="/fotos/FotosMobs.css/305px-Spider_Mummy.png" alt=""></td>
+                                                <td>25</td>
+                                                <td>19.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Wisp" style="height: 150px;">Wisp</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Wisp.png" alt=""></td>
+                                                <td>160</td>
+                                                <td>25.3</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Zombie" style="height: 150px;">Zombie</td>
+                                                <td><img src="/fotos/FotosMobs.css/300px-Zombie.png" alt=""></td>
+                                                <td>240</td>
+                                                <td>33.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="Mimic" style="height: 150px;">Mimic</td>
+                                                <td><img src="/fotos/FotosMobs.css/387px-Slinkfoul.png" alt=""></td>
+                                                <td>100</td>
+                                                <td>28</td>
+                                            </tr>
+                                        </tbody>
+                                 
+                                </table>
+                            </section>
+                        </section>
+                    </body>
+                </article>
+             </body>
+
+
+        </nav>
+
+   
+
+
+</body>
+</html>

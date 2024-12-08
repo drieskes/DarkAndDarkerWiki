@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/feedback.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="circle-container">
+                    <li><img id="foto_headweb" src="/fotos/MenuFotos/WEBICON.avif" alt=""></li>
+                </div>
+            </ul>
+            <ul class="menu_balk">   
+                <li><a href="/Website/Hoofdmenu.html">Terugkeren</a></li>
+            </ul>
+        </nav>
+     </header>
+
+        <main>
+            <article id="feedback-article" class="grid-item feedback">
+                <h2 id="form-title" class="form-header">Feedback Formulier</h2>
+                <form id="feedbackForm" class="form-container" action="send_feedback.php" method="POST">
+                    <label for="name" class="form-label">Naam:</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Uw naam" required>
+                
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Uw e-mailadres" required>
+                
+                    <label for="message" class="form-label">Bericht:</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Uw feedback..." rows="4" required></textarea>
+                
+                    <label for="rating" class="form-label">Beoordeling:</label>
+                    <select id="rating" name="rating" class="form-select" required>
+                        <option value="" disabled selected>Kies een beoordeling</option>
+                        <option value="1">1 - Slecht</option>
+                        <option value="2">2 - Matig</option>
+                        <option value="3">3 - Gemiddeld</option>
+                        <option value="4">4 - Goed</option>
+                        <option value="5">5 - Uitstekend</option>
+                    </select>
+                
+                    <button type="submit" id="submit-btn" class="form-button">Verstuur Feedback</button>
+                </form>
+                 </form>
+            </article>
+        </main>
+       
+
+
+
+
+    
+ 
+</body>
+</html>
